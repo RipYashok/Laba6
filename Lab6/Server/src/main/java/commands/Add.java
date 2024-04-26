@@ -40,8 +40,7 @@ public class Add extends Command {
     }
 
 
-    public String execute(ArrayList<Route> collection, Route value) {
-        Route route = value;
+    public String execute(ArrayList<Route> collection, String value, Route route) {
         newID(collection, route);
         newTime(route);
         collection.add(route);

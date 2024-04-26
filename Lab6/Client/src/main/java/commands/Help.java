@@ -2,7 +2,6 @@ package commands;
 
 import model.Route;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class Help extends Command{
@@ -11,7 +10,7 @@ public class Help extends Command{
         setDescription(" - вывести справку по доступным командам");
     }
 
-    public Route execute(Scanner scanner, String value) {
+    public Route execute(Scanner scanner) {
         return null;
     }
 }

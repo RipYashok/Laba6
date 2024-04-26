@@ -2,7 +2,6 @@ package commands;
 
 import model.Route;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -16,7 +15,7 @@ public class Exit extends Command{
     }
 
 
-    public Route execute(Scanner scanner, String value) {
+    public Route execute(Scanner scanner) {
         System.out.println("Завершение работы");
         System.exit(0);
         return null;

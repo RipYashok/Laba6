@@ -28,7 +28,7 @@ public class Command {
     }
 
 
-    public Route execute(Scanner scanner, String value) throws IOException {
+    public Route execute(Scanner scanner) throws IOException {
         System.out.println(12);
         return null;
     }

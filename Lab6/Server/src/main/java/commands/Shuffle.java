@@ -5,7 +5,6 @@ import model.Route;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class Shuffle extends Command{
     public Shuffle(){
@@ -13,7 +12,7 @@ public class Shuffle extends Command{
         setDescription(" - перемешать элементы коллекции в случайном порядке");
     }
 
-    public String execute(ArrayList<Route> collection, Route value) throws IOException {
+    public String execute(ArrayList<Route> collection, String value, Route route) throws IOException {
         Collections.shuffle(collection);
         return "Коллекция перемешана.";
     }

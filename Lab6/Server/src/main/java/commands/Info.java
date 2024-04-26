@@ -2,10 +2,8 @@ package commands;
 
 import model.Route;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Scanner;
 
 public class Info extends Command{
     public Info(){
@@ -14,7 +12,7 @@ public class Info extends Command{
     }
 
 
-    public String execute(ArrayList<Route> collection, Route value) {
+    public String execute(ArrayList<Route> collection, String value, Route route) {
         String answer = "";
         Date initTime = new Date();
         answer = "Тип коллекции: ArrayList" + "\n" +

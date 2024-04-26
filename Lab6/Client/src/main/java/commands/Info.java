@@ -2,9 +2,6 @@ package commands;
 
 import model.Route;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Info extends Command{
@@ -14,7 +11,7 @@ public class Info extends Command{
     }
 
 
-    public Route execute(Scanner scanner, String value) {
+    public Route execute(Scanner scanner) {
         return null;
     }
 }

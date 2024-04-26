@@ -19,7 +19,8 @@ public class ClientManeger {
                     input.add("null");
                 }
                 packet.setCommand((Command) CreateCommands.commands().get(input.get(0)));
-                packet.setRoute(((Command) CreateCommands.commands().get(input.get(0))).execute(scanner, input.get(1)));
+                packet.setRoute(((Command) CreateCommands.commands().get(input.get(0))).execute(scanner));
+                packet.setValue(input.get(1));
                 break;
             } catch (FileNotFoundException e) {
                 System.out.println("Файл не найден.");

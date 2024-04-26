@@ -47,6 +47,8 @@ public class ServerMain {
             e.printStackTrace();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
+        } catch (NumberFormatException e){
+            throw new RuntimeException(e);
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
@@ -63,7 +65,7 @@ public class ServerMain {
     }
     public static void sendToClient(ByteBuffer buffer, Packet packet, ArrayList<Route> collection, DatagramChannel serverChannel, SocketAddress clientAddress) throws Exception {
         Answer answer = new Answer();
-        answer.setAnswer(((Command) CreateCommands.commands().get(packet.getCommand().getTitle())).execute(collection, packet.getRoute()));
+        answer.setAnswer(((Command) CreateCommands.commands().get(packet.getCommand().getTitle())).execute(collection, packet.getValue(), packet.getRoute()));
         byte[] jsonBytes = JsonSerializer.serialize(answer);
         buffer.put(jsonBytes);
         buffer.flip();

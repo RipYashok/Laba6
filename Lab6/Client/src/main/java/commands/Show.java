@@ -2,8 +2,6 @@ package commands;
 
 import model.Route;
 
-import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -15,7 +13,7 @@ public class Show extends Command {
         setDescription(" -  вывести в стандартный поток вывода все элементы коллекции в строковом представлении");
     }
 
-    public Route execute(Scanner scanner, String value) {
+    public Route execute(Scanner scanner) {
         return null;
     }
 }

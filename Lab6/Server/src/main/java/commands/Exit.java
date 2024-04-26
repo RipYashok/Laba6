@@ -16,7 +16,7 @@ public class Exit extends Command{
         setDescription(" - завершить программу (без сохранения в файл)");
     }
 
-    public String execute(ArrayList<Route> collection, Scanner scanner, String fileCollection, String value) throws IOException {
+    public String execute(ArrayList<Route> collection, String value, Route route) throws IOException {
         return null;
     }
 }

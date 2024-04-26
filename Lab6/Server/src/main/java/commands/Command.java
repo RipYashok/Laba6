@@ -28,7 +28,7 @@ public class Command {
     }
 
 
-    public String execute(ArrayList<Route> collection, Route value) throws IOException {
+    public String execute(ArrayList<Route> collection, String value, Route route) throws IOException {
         return null;
     }
 

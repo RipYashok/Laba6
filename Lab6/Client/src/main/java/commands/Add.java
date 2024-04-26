@@ -147,7 +147,7 @@ public class Add extends Command {
     }
 
     @Override
-    public Route execute(Scanner scanner, String value) throws IOException {
+    public Route execute(Scanner scanner) throws IOException {
         Route route = new Route();
         chooseName(route, scanner);
         chooseCoordinates(route, scanner);
